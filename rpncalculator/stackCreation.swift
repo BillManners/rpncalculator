@@ -52,9 +52,11 @@ class Stack{
         return displayMessage
     }
     
-    func deleteAll(){
+    func clear(){
+        if self.currentOperand == ""{
+            self.stackContents = []
+        }
         self.currentOperand = ""
-        self.stackContents = []
     }
     
     func calcMasterCaller(){

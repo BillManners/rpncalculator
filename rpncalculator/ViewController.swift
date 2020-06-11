@@ -9,24 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var zero: UIButton!
-    @IBOutlet var one: UIButton!
-    @IBOutlet var two: UIButton!
-    @IBOutlet var three: UIButton!
-    @IBOutlet var four: UIButton!
-    @IBOutlet var five: UIButton!
-    @IBOutlet var six: UIButton!
-    @IBOutlet var seven: UIButton!
-    @IBOutlet var eight: UIButton!
-    @IBOutlet var nine: UIButton!
-    @IBOutlet var evaluate: UIButton!
-    @IBOutlet var clear: UIButton!
-    @IBOutlet var enter: UIButton!
-    @IBOutlet var chs: UIButton!
-    @IBOutlet var add: UIButton!
-    @IBOutlet var subtract: UIButton!
-    @IBOutlet var multiply: UIButton!
-    @IBOutlet var divide: UIButton!
     
     @IBOutlet var calcDisplay: UILabel!
     var primaryStack = Stack()
@@ -38,12 +20,14 @@ class ViewController: UIViewController {
 
     }
     
+    @IBAction func infoPressed(_ sender: Any) {
+        
+    }
     @IBAction func zeroPressed(_ sender: Any) {
         primaryStack.appendThis(toAppend: "0")
         calcDisplay.text = primaryStack.display()
     }
     @IBAction func onePressed(_ sender: Any) {
-        
         primaryStack.appendThis(toAppend: "1")
         calcDisplay.text = primaryStack.display()
     }
@@ -85,7 +69,7 @@ class ViewController: UIViewController {
         calcDisplay.text = primaryStack.display()
     }
     @IBAction func clearPressed(_ sender: Any) {
-        primaryStack.deleteAll()
+        primaryStack.clear()
         calcDisplay.text = primaryStack.display()
     }
     @IBAction func enterPressed(_ sender: Any) {

@@ -32,16 +32,15 @@ class Stack{
     
     func endOfOperand(){
         if currentOperand.count != 0{
-            self.stackContents.insert(self.currentOperand, at: 0)
+            self.stackContents.append(self.currentOperand)
             self.currentOperand = ""
         }
     }
     
     func display()->String{
         var displayMessage = ""
-        let lengthOfStackContents = stackContents.count
         for i in (0..<(stackContents.count)){
-            displayMessage = displayMessage + stackContents[lengthOfStackContents-i-1] + " "
+            displayMessage = displayMessage + stackContents[i] + " "
         }
         displayMessage = displayMessage + currentOperand
         return displayMessage
@@ -50,6 +49,56 @@ class Stack{
     func deleteAll(){
         self.currentOperand = ""
         self.stackContents = []
+    }
+    
+    func calcMaster(){
+        var localStackContents = stackContents
+        var aTimes = 0
+        var bTimes = 0
+        var result = 0
+        while true{
+            if localStackContents.count < 3{
+                stackContents = localStackContents
+                return()
+            } else {
+                var aText = localStackContents.removeFirst()
+                if aText.contains("~"){
+                    aTimes = -1
+                    aText = aText.replacingOccurrences(of: "~", with: "")
+                } else { aTimes = 1}
+                guard var a = Int(aText)
+                    else {return()}
+                a = a *  aTimes
+                
+            
+                var bText = localStackContents.removeFirst()
+                if bText.contains("~"){
+                    bTimes = -1
+                    bText = bText.replacingOccurrences(of: "~", with: "")
+                } else { bTimes = 1}
+                guard var b = Int(bText)
+                    else {return()}
+                b=b*bTimes
+                
+                let cText = localStackContents.removeFirst()
+                if cText == "+"{
+                    result = a+b
+                }
+                if cText == "-"{
+                    result = a-b
+                }
+                if cText == "*"{
+                    result = a*b
+                }
+                if cText == "/"{
+                    result = a/b
+                }
+                var stringResult = String(result)
+                stringResult = stringResult.replacingOccurrences(of: "-", with: "~")
+                localStackContents.insert(stringResult, at: 0)
+                
+            }
+        }
     }
     
 }

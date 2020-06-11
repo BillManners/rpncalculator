@@ -100,6 +100,58 @@ class rpncalculatorUITests: XCTestCase {
         
         
     }
+    
+    func testInfoBox() {
+        //arrange
+        let app = XCUIApplication()
+        app.launch()
+        //act
+        app.buttons[" "].tap()
+        let actual = app.alerts["Help"].exists
+        //assert
+        XCTAssertTrue(actual)
+        
+        
+    }
+    
+    func testLongSum() {
+        //arrange
+        let app = XCUIApplication()
+        app.launch()
+        let expected = "-2 "
+        //act
+        app.buttons["4"].tap()
+        app.buttons["Enter"].tap()
+        app.buttons["8"].tap()
+        app.buttons["-"].tap()
+        app.buttons["2"].tap()
+        app.buttons["/"].tap()
+        app.buttons["Eval"].tap()
+        let actual = app.staticTexts["display"].label
+        //assert
+        XCTAssertEqual(actual,expected)
+            
+            
+        
+    }
+    
+    func testClearAll() {
+        //arrange
+        let app = XCUIApplication()
+        app.launch()
+        let expected = ""
+        //act
+        app.buttons["7"].tap()
+        app.buttons["0"].tap()
+        app.buttons["+/-"].tap()
+        app.buttons["8"].tap()
+        app.buttons["CLR"].tap()
+        let actual = app.staticTexts["display"].label
+        //assert
+        XCTAssertEqual(actual,expected)
+        
+        
+    }
 
 // This is important, but it runs so slowly
 //    func testLaunchPerformance() {

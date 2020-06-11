@@ -21,7 +21,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func infoPressed(_ sender: Any) {
-        
+        let alertController = UIAlertController(title: "Help", message:
+            "This is a Reverse Polish Notation (RPN) calculator. \n Reverse Polish Notation is where arithmetic expressions are written such that the operator comes after the operands. \n E.g: 35*44*- would perform the calculation: (3*5)-(4*4) \n Press enter to begin a new number, press eval to calculate the answer.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+
+        self.present(alertController, animated: true, completion: nil)
     }
     @IBAction func zeroPressed(_ sender: Any) {
         primaryStack.appendThis(toAppend: "0")

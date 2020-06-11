@@ -51,15 +51,19 @@ class Stack{
         self.stackContents = []
     }
     
-    func calcMaster(){
-        var localStackContents = stackContents
+    func calcMasterCaller(){
+        _ = calcMaster(newStackContents: self.stackContents)
+    }
+    
+    func calcMaster(newStackContents:[String])->[String]{
+        var localStackContents = newStackContents
         var aTimes = 0
         var bTimes = 0
         var result = 0
         while true{
             if localStackContents.count < 3{
                 stackContents = localStackContents
-                return()
+                return(localStackContents)
             } else {
                 var aText = localStackContents.removeFirst()
                 if aText.contains("~"){
@@ -67,38 +71,41 @@ class Stack{
                     aText = aText.replacingOccurrences(of: "~", with: "")
                 } else { aTimes = 1}
                 guard var a = Int(aText)
-                    else {return()}
+                    else {return(localStackContents)}
                 a = a *  aTimes
                 
             
-                var bText = localStackContents.removeFirst()
+                var bText = localStackContents[0]
                 if bText.contains("~"){
                     bTimes = -1
                     bText = bText.replacingOccurrences(of: "~", with: "")
                 } else { bTimes = 1}
                 guard var b = Int(bText)
-                    else {return()}
+                    else {return(localStackContents)}
                 b=b*bTimes
                 
-                let cText = localStackContents.removeFirst()
+                let cText = localStackContents[1]
                 if cText == "+"{
                     result = a+b
                 }
-                if cText == "-"{
+                else if cText == "-"{
                     result = a-b
                 }
-                if cText == "*"{
+                else if cText == "*"{
                     result = a*b
                 }
-                if cText == "/"{
+                else if cText == "/"{
                     result = a/b
-                }
+                } else {localStackContents =  calcMaster(newStackContents: localStackContents)}
                 var stringResult = String(result)
                 stringResult = stringResult.replacingOccurrences(of: "-", with: "~")
+                localStackContents.removeFirst()
+                localStackContents.removeFirst()
                 localStackContents.insert(stringResult, at: 0)
                 
             }
         }
+    return(localStackContents)
     }
-    
+        
 }

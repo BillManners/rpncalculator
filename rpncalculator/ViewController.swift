@@ -81,7 +81,7 @@ class ViewController: UIViewController {
     }
     @IBAction func evaluatePressed(_ sender: Any) {
         primaryStack.endOfOperand()
-        primaryStack.calcMaster()
+        primaryStack.calcMasterCaller()
         calcDisplay.text = primaryStack.display()
     }
     @IBAction func clearPressed(_ sender: Any) {

@@ -16,6 +16,7 @@
 		B619CA3C248FCF3D00F05380 /* rpncalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619CA3B248FCF3D00F05380 /* rpncalculatorTests.swift */; };
 		B619CA47248FCF3D00F05380 /* rpncalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B619CA46248FCF3D00F05380 /* rpncalculatorUITests.swift */; };
 		B61BB2DA249022F3008EB173 /* stackCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61BB2D9249022F3008EB173 /* stackCreation.swift */; };
+		B6CAE3562492754900EF492C /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAE3552492754900EF492C /* Calculation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		B619CA46248FCF3D00F05380 /* rpncalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rpncalculatorUITests.swift; sourceTree = "<group>"; };
 		B619CA48248FCF3D00F05380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B61BB2D9249022F3008EB173 /* stackCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stackCreation.swift; sourceTree = "<group>"; };
+		B6CAE3552492754900EF492C /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				B619CA2F248FCF3D00F05380 /* LaunchScreen.storyboard */,
 				B619CA32248FCF3D00F05380 /* Info.plist */,
 				B61BB2D9249022F3008EB173 /* stackCreation.swift */,
+				B6CAE3552492754900EF492C /* Calculation.swift */,
 			);
 			path = rpncalculator;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				B61BB2DA249022F3008EB173 /* stackCreation.swift in Sources */,
 				B619CA25248FCF3C00F05380 /* AppDelegate.swift in Sources */,
 				B619CA27248FCF3C00F05380 /* SceneDelegate.swift in Sources */,
+				B6CAE3562492754900EF492C /* Calculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

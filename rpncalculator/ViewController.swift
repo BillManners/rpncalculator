@@ -93,7 +93,7 @@ class ViewController: UIViewController {
         calcDisplay.text = primaryStack.display()
     }
     @IBAction func chsPressed(_ sender: Any) {
-        primaryStack.appendThis(toAppend: "~")
+        primaryStack.appendThis(toAppend: "chs")
         calcDisplay.text = primaryStack.display()
     }
     @IBAction func addPressed(_ sender: Any) {

@@ -41,7 +41,7 @@ class Stack{
         var displayMessage = ""
         let lengthOfStackContents = stackContents.count
         for i in (0..<(stackContents.count)){
-            displayMessage = displayMessage + stackContents[lengthOfStackContents-i-1]
+            displayMessage = displayMessage + stackContents[lengthOfStackContents-i-1] + " "
         }
         displayMessage = displayMessage + currentOperand
         return displayMessage

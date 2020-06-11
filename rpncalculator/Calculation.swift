@@ -15,7 +15,7 @@ struct Calculation{
         var result = 0
         while true{
             let thisOp = localStackContents[0]
-            if localStackContents.count < 3 || !(localStackContents[0...2].contains("+") || localStackContents[0...2].contains("-") || localStackContents[0...2].contains("*") || localStackContents[0...2].contains("/")) {
+            if localStackContents.count < 3 || !(localStackContents[0].contains("+") || localStackContents[0].contains("-") || localStackContents[0].contains("*") || localStackContents[0].contains("/")) {
                 return(localStackContents)
                 
             } else if operators.contains(localStackContents[1]){

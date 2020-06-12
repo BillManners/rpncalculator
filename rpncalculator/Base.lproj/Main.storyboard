@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,13 +12,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rpncalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbV-7c-naO">
-                                <rect key="frame" x="324" y="774" width="70" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbV-7c-naO">
+                                <rect key="frame" x="285" y="581" width="70" height="64.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="B5C-SS-2WE"/>
+                                    <constraint firstAttribute="height" constant="67" id="WO5-wA-jKL"/>
+                                    <constraint firstAttribute="width" constant="70" id="a4l-Bs-Zzm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="lJx-G1-eA2"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -34,9 +36,12 @@
                                     <action selector="dividePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wg4-3u-Pod"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0e-Hw-HVH">
-                                <rect key="frame" x="32" y="773" width="70" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0e-Hw-HVH">
+                                <rect key="frame" x="20" y="579" width="70" height="66.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="Lb8-ID-pdf"/>
+                                    <constraint firstAttribute="width" constant="70" id="sgX-bY-gzm"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="+">
@@ -51,10 +56,12 @@
                                     <action selector="addPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uxF-Tz-VOm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFi-Gg-HuG">
-                                <rect key="frame" x="129" y="774" width="70" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFi-Gg-HuG">
+                                <rect key="frame" x="129" y="581" width="70" height="64.5"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="A6L-gO-UMQ"/>
                                     <constraint firstAttribute="width" constant="70" id="ipD-MG-63N"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="pwv-Xl-iRa"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -70,9 +77,12 @@
                                     <action selector="subtractPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gc1-XN-pEv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HCF-HG-jlD">
-                                <rect key="frame" x="228" y="656.66666666666663" width="166" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HCF-HG-jlD">
+                                <rect key="frame" x="189" y="492.5" width="166" height="65.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="WRU-m3-oc2"/>
+                                    <constraint firstAttribute="height" constant="68" id="hDJ-yI-4ET"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="+/-">
@@ -87,11 +97,12 @@
                                     <action selector="chsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RdX-8g-Rn8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-S7-JRa">
-                                <rect key="frame" x="32" y="656.66666666666663" width="166" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-S7-JRa">
+                                <rect key="frame" x="20" y="491" width="166" height="65.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="166" id="Ne6-J9-qSX"/>
                                     <constraint firstAttribute="height" constant="68" id="OnH-iK-hZZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="TqX-F8-xf6"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -107,9 +118,13 @@
                                     <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSY-tE-PAH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GlU-ab-XeT">
-                                <rect key="frame" x="32" y="548.66666666666663" width="91" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GlU-ab-XeT">
+                                <rect key="frame" x="20" y="411" width="91" height="65.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="7Fb-6x-sQl"/>
+                                    <constraint firstAttribute="width" constant="91" id="SeI-aB-cUd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="us2-Yh-nsY"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Eval">
@@ -124,9 +139,12 @@
                                     <action selector="evaluatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdn-fn-0GR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bl-tm-1Uo">
-                                <rect key="frame" x="162" y="548.66666666666663" width="91" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bl-tm-1Uo">
+                                <rect key="frame" x="162" y="412" width="91" height="65.5"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="68" id="Spd-9M-bDC"/>
+                                    <constraint firstAttribute="width" constant="91" id="aeP-Dc-MQI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="h8w-Bj-BzV"/>
                                     <constraint firstAttribute="height" constant="68" id="vTf-LS-qX3"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
@@ -143,9 +161,13 @@
                                     <action selector="zeroPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHH-Bq-Zpq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bF9-v9-WJa">
-                                <rect key="frame" x="303" y="549" width="91" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bF9-v9-WJa">
+                                <rect key="frame" x="264" y="412" width="91" height="64.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="67" id="5N8-wL-5bt"/>
+                                    <constraint firstAttribute="width" constant="91" id="TX2-Q4-FVk"/>
+                                    <constraint firstAttribute="height" constant="67" id="lrM-2W-Ff6"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="CLR">
@@ -160,9 +182,12 @@
                                     <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBK-yI-WDE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qrn-14-NN5">
-                                <rect key="frame" x="32" y="457.66666666666669" width="91" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qrn-14-NN5">
+                                <rect key="frame" x="20" y="318" width="91" height="65.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="iHY-uW-I1s"/>
+                                    <constraint firstAttribute="width" constant="91" id="kzm-Tu-bv5"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="1">
@@ -177,9 +202,12 @@
                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfK-n3-sa7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ROb-1z-814">
-                                <rect key="frame" x="162" y="457.66666666666669" width="91" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ROb-1z-814">
+                                <rect key="frame" x="162" y="318" width="91" height="65.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="lE5-cd-58T"/>
+                                    <constraint firstAttribute="width" constant="91" id="wqv-bF-3jp"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="2">
@@ -194,9 +222,11 @@
                                     <action selector="twoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCk-Gf-ibJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Imz-W2-UwV">
-                                <rect key="frame" x="303" y="457.66666666666669" width="91" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Imz-W2-UwV">
+                                <rect key="frame" x="264" y="318" width="91" height="65.5"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="OIH-lm-hQ8"/>
+                                    <constraint firstAttribute="width" constant="91" id="XNv-gs-yuf"/>
                                     <constraint firstAttribute="height" constant="68.000000000000057" id="ZGA-32-JjA"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
@@ -213,9 +243,12 @@
                                     <action selector="threePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5S-yN-llA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1b-oV-WVb">
-                                <rect key="frame" x="32" y="356.66666666666669" width="91" height="64.999999999999972"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1b-oV-WVb">
+                                <rect key="frame" x="20" y="228" width="91" height="65.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="BmS-zy-ktR"/>
+                                    <constraint firstAttribute="height" constant="68" id="FJZ-ts-ZPA"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="4">
@@ -230,10 +263,12 @@
                                     <action selector="fourPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dL5-iD-nfS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-MY-wcJ">
-                                <rect key="frame" x="162" y="356.66666666666669" width="91" height="64.999999999999972"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGn-MY-wcJ">
+                                <rect key="frame" x="162" y="229" width="91" height="65.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68.000000000000028" id="0ek-Co-rfB"/>
+                                    <constraint firstAttribute="width" constant="91" id="6q5-Jl-I8k"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="ZgA-gF-A7x"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -249,9 +284,12 @@
                                     <action selector="fivePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ioo-e9-pt3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6n-ta-hnt">
-                                <rect key="frame" x="303" y="356.66666666666669" width="91" height="64.999999999999972"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6n-ta-hnt">
+                                <rect key="frame" x="264" y="229" width="91" height="65.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="wmr-c4-EBD"/>
+                                    <constraint firstAttribute="width" constant="91" id="zBY-4c-ZCP"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="rectangle" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="6">
@@ -266,9 +304,85 @@
                                     <action selector="sixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZF-wE-qyP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s94-gv-gCc">
-                                <rect key="frame" x="32" y="265.66666666666669" width="91" height="65.333333333333343"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXR-uF-ybb">
+                                <rect key="frame" x="162" y="140" width="91" height="65"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="67.670000000000002" id="N8s-Vw-510"/>
+                                    <constraint firstAttribute="width" constant="91" id="ypb-5Z-k9A"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="rectangle" catalog="system">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="8">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="eightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuQ-6g-9fk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZzC-VM-vn8">
+                                <rect key="frame" x="264" y="140" width="91" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="PdX-QN-Yga"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="SVP-Al-TaU"/>
+                                    <constraint firstAttribute="height" constant="67.5" id="SuN-bo-gUx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="67.670000000000002" id="oeR-0V-lzq"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="rectangle" catalog="system">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="9">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="ninePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNl-gZ-cpP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-37-8T4">
+                                <rect key="frame" x="324" y="4.5" width="31" height="31.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="APC-cl-FEO"/>
+                                    <constraint firstAttribute="height" constant="32.329999999999998" id="eIb-FE-X9Q"/>
+                                </constraints>
+                                <state key="normal" title=" " backgroundImage="info.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="infoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3L5-Of-K6p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWA-ng-iAH">
+                                <rect key="frame" x="224" y="580.5" width="70" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="KjL-Nm-ua0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="cUc-tr-elB"/>
+                                    <constraint firstAttribute="height" constant="67.329999999999998" id="jcN-qx-iGc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="rectangle" catalog="system">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="*">
+                                            <attributes>
+                                                <font key="NSFont" size="26" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="multiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9r-0g-C6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s94-gv-gCc">
+                                <rect key="frame" x="20" y="143" width="91" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="aac-Ji-VPN"/>
+                                    <constraint firstAttribute="height" constant="68.329999999999998" id="jYP-iU-2oI"/>
                                     <constraint firstAttribute="width" constant="91" id="pu7-0L-tpq"/>
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -286,78 +400,56 @@
                                     <action selector="sevenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pr0-OX-C4t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lXR-uF-ybb">
-                                <rect key="frame" x="162" y="265.66666666666669" width="91" height="64.666666666666657"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="rectangle" catalog="system">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="8">
-                                            <attributes>
-                                                <font key="NSFont" size="26" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="eightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuQ-6g-9fk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZzC-VM-vn8">
-                                <rect key="frame" x="303" y="265.66666666666669" width="91" height="64.666666666666657"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="PdX-QN-Yga"/>
-                                    <constraint firstAttribute="height" constant="67.5" id="SuN-bo-gUx"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="rectangle" catalog="system">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="9">
-                                            <attributes>
-                                                <font key="NSFont" size="26" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="ninePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNl-gZ-cpP"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxn-S2-VC1">
-                                <rect key="frame" x="26" y="135" width="363" height="48"/>
+                                <rect key="frame" x="31" y="95" width="363" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="display"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-37-8T4">
-                                <rect key="frame" x="351" y="49" width="31" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" " backgroundImage="info.circle" catalog="system"/>
-                                <connections>
-                                    <action selector="infoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3L5-Of-K6p"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWA-ng-iAH">
-                                <rect key="frame" x="228" y="774.66666666666663" width="70" height="64.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="rectangle" catalog="system">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="*">
-                                            <attributes>
-                                                <font key="NSFont" size="26" name="HelveticaNeue"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="multiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9r-0g-C6e"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lXR-uF-ybb" secondAttribute="bottom" constant="460.32999999999998" id="1CA-PV-HiB"/>
+                            <constraint firstItem="s94-gv-gCc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2w2-EJ-A2k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GlU-ab-XeT" secondAttribute="bottom" constant="189" id="6rI-GB-5kL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z0e-Hw-HVH" secondAttribute="bottom" constant="20" id="7I5-F0-alq"/>
+                            <constraint firstItem="xbV-7c-naO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FWA-ng-iAH" secondAttribute="trailing" constant="10" id="8EU-bL-oIY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3bl-tm-1Uo" secondAttribute="bottom" constant="188" id="AnW-N6-R1m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dGn-MY-wcJ" secondAttribute="bottom" constant="371" id="C6w-5G-l1D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Imz-W2-UwV" secondAttribute="bottom" constant="282" id="F8a-eC-nY6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Imz-W2-UwV" secondAttribute="trailing" constant="20" id="IK3-CR-zpf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qrn-14-NN5" secondAttribute="bottom" constant="282" id="ISK-Ub-PRC"/>
+                            <constraint firstItem="FWA-ng-iAH" firstAttribute="top" secondItem="HCF-HG-jlD" secondAttribute="bottom" constant="20" id="Lrh-OL-GBC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s94-gv-gCc" secondAttribute="bottom" constant="456.67000000000002" id="Me6-UR-6aw"/>
+                            <constraint firstItem="Qrn-14-NN5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R5v-4t-Fyz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nFi-Gg-HuG" secondAttribute="bottom" constant="20" id="VhY-b7-o6A"/>
+                            <constraint firstItem="lXR-uF-ybb" firstAttribute="leading" secondItem="s94-gv-gCc" secondAttribute="trailing" constant="51" id="XpQ-W8-z9c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bF9-v9-WJa" secondAttribute="trailing" constant="20" id="ZS1-6K-o72"/>
+                            <constraint firstItem="GlU-ab-XeT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="b4X-HM-Nsn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ytg-37-8T4" secondAttribute="trailing" constant="20" id="dVo-eT-bmC"/>
+                            <constraint firstItem="T1b-oV-WVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dwr-ye-ifX"/>
+                            <constraint firstItem="ytg-37-8T4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="e7c-aF-Ucu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ROb-1z-814" secondAttribute="bottom" constant="282" id="eTb-JW-5sx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W6n-ta-hnt" secondAttribute="trailing" constant="20" id="foL-ke-SHo"/>
+                            <constraint firstItem="nFi-Gg-HuG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="h9j-T1-RUC"/>
+                            <constraint firstItem="wZa-S7-JRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iaK-hI-kHS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZzC-VM-vn8" secondAttribute="trailing" constant="20" id="j95-Qw-BQO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T1b-oV-WVb" secondAttribute="bottom" constant="372" id="lFD-h1-7vi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xbV-7c-naO" secondAttribute="bottom" constant="20" id="n9y-W9-i1O"/>
+                            <constraint firstItem="3bl-tm-1Uo" firstAttribute="leading" secondItem="GlU-ab-XeT" secondAttribute="trailing" constant="51" id="qYk-WU-Lmn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W6n-ta-hnt" secondAttribute="bottom" constant="371" id="rhq-Ar-hg7"/>
+                            <constraint firstItem="Z0e-Hw-HVH" firstAttribute="top" secondItem="wZa-S7-JRa" secondAttribute="bottom" constant="20" id="rz4-zO-8JO"/>
+                            <constraint firstItem="ROb-1z-814" firstAttribute="leading" secondItem="Qrn-14-NN5" secondAttribute="trailing" constant="51" id="sgD-dc-FnC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZzC-VM-vn8" secondAttribute="bottom" constant="460.32999999999998" id="tmo-hn-Nec"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FWA-ng-iAH" secondAttribute="bottom" constant="20" id="v0o-Yu-dWY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bF9-v9-WJa" secondAttribute="bottom" constant="189" id="vBx-DB-EWK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xbV-7c-naO" secondAttribute="trailing" constant="20" id="vqD-W7-Bpy"/>
+                            <constraint firstItem="dGn-MY-wcJ" firstAttribute="leading" secondItem="T1b-oV-WVb" secondAttribute="trailing" constant="51" id="w6y-x2-xry"/>
+                            <constraint firstItem="Z0e-Hw-HVH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wPR-VQ-Eln"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HCF-HG-jlD" secondAttribute="trailing" constant="20" id="y0m-UA-848"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
